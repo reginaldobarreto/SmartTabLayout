@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
                 .add(R.string.titleA, PageFragment.class)
-                .add(R.string.titleB, PageFragment.class)
+                .add(R.string.titleB, PageAFragment.class)
+                .add(R.string.titleC, PageBFragment.class)
                 .create());
 
         viewPager.setAdapter(adapter);
